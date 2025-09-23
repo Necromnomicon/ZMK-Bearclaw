@@ -5,5 +5,5 @@ config SHIELD_BEARCLAW_RIGHT
     def_bool $(shields_list_contains,bearclaw_right)
 
 config SHIELD_BEARCLAW_DONGLE 
-    def_bool $(chields_list_contains,bearclaw_dongle)
+    def_bool $(shields_list_contains,bearclaw_dongle)
 
