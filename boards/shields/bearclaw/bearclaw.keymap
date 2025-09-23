@@ -78,7 +78,7 @@
     compatible = "zmk,keymap";
 
     base_layer {
-      label= "BASE"
+      display-name = "BASE";
       bindings = <
                      &kp N1      &kp N2       &kp N3        &kp N4         &kp N5                             &kp N6    &kp N7         &kp N8        &kp N9       &kp N0    
         &kp LC(TAB)  &kp B       &kp L        &kp D         &kp W          &kp Z  &kp LBKT        &kp RBKT    &kp APOS  &kp F          &kp O         &kp U        &kp J       &kp BSLH 
@@ -90,7 +90,7 @@
     };
 
     navnum_layer {
-      label= "NAVINUM"
+      display-name = "NAVINUM";
       bindings = <
                      &kp F1          &kp F2        &kp F3        &kp F4         &kp F5                              &kp F6    &kp F7           &kp F8          &kp F9       &kp F10   
         &kp TAB      &kp COLON       &kp N7        &kp N8        &kp N9         &kp PERCENT &kp F11       &kp F12   &kp CARET &kp B            &kp LC(D)       &kp LC(U)    &kp W           &kp DOLLAR
@@ -102,7 +102,7 @@
     };
 
     funsym_layer {
-      label= "FUNCTSYM"
+      display-name = "FUNCTSYM";
       bindings = <
                        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none      &none                                       &none     &none     &none     &none     &none     
         &bt BT_CLR     &none        &none        &none        &none      &none       &sys_reset          &sys_reset  &none     &none     &none     &none     &none     &none 
@@ -114,7 +114,7 @@
     };
 
     game_layer {
-      label= "PRO GAMER"
+      display-name = "PRO GAMER";
       bindings = <
                &kp N1     &kp N2    &kp N3    &kp N4    &kp N5                       &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    
         &kp N6 &kp TAB    &kp Q     &kp W     &kp E     &kp R   &kp T       &kp ESC  &kp Y     &kp U     &kp I     &kp O     &kp APOS  &kp BSPC
