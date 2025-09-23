@@ -1,0 +1,12 @@
+file_format: "1"
+id: bearclaw
+name: BEARCLAW 
+type: shield
+url: https://github.com/Necromnomicon/ZMK-Bearclaw
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+siblings:
+  - bearclaw_left 
+  - bearclaw_right 
+  - bearclaw_dongle 
