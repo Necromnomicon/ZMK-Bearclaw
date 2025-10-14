@@ -48,10 +48,10 @@
 
   };
    
-  //combo to trigger GAME layer. 
   combos {
     compatible = "zmk,combos";
 
+  //combo to trigger GAME layer. 
     combo_game {
       timeout-ms = <50>;
       key-positions = <54 55>;
@@ -63,6 +63,13 @@
       timeout-ms = <50>;
       key-positions = <12 13>;
       bindings = <&kp TAB>;
+    };
+
+ //combo capsword 
+    combo_capsword {
+      timeout-ms = <50>;
+      key-positions = <56 57>;
+      bindings = <&caps_word>;
     };
 
  //combo to select all on any layer 
@@ -83,45 +90,45 @@
                      &kp N1      &kp N2       &kp N3        &kp N4         &kp N5                             &kp N6    &kp N7         &kp N8        &kp N9       &kp N0    
         &kp LC(TAB)  &kp B       &kp L        &kp D         &kp W          &kp Z  &kp LBKT        &kp RBKT    &kp APOS  &kp F          &kp O         &kp U        &kp J       &kp BSLH 
         &kp ESC      &hml LGUI N &hml LALT R  &hml LCTRL T  &hml LSHIFT S  &kp G  &kp LPAR        &kp RPAR    &kp Y     &hmr LSHIFT H  &hmr LCTRL A  &hmr LALT E  &hmr LGUI I &kp SEMI   
-        &kp GRAVE    &kp Q       &kp X        &kp M         &kp C          &kp V  &kp EQUAL       &kp MINUS   &kp K     &kp P          &kp COMMA     &kp DOT      &kp SLASH   &kp EXCL
-                                 &kp LEFT     &kp RIGHT                                                                                &kp DOWN      &kp UP     
+        &key_repeat  &kp Q       &kp X        &kp M         &kp C          &kp V  &kp EQUAL       &kp MINUS   &kp K     &kp P          &kp COMMA     &kp DOT      &kp SLASH   &kp EXCL
+                                 &mt HOME LEFT  &mt END RIGHT                                                                          &mt PG_DN DOWN &mt PG_UP UP     
                                                           &lt 1 DEL    &mt LSHIFT BSPC                     &kp SPACE &lt 2 ENTER
       >;
     };
 
     navnum_layer {
-      display-name = "NAVINUM";
+      display-name = "NAVNUM";
       bindings = <
                      &kp F1          &kp F2        &kp F3        &kp F4         &kp F5                              &kp F6    &kp F7           &kp F8          &kp F9       &kp F10   
         &kp TAB      &kp COLON       &kp N7        &kp N8        &kp N9         &kp PERCENT &kp F11       &kp F12   &kp CARET &kp B            &kp LC(D)       &kp LC(U)    &kp W           &kp DOLLAR
-        &kp ESC      &hml LGUI PLUS  &hml LALT N4  &hml LCTRL N5 &hml LSHIFT N6 &kp STAR    &kp LBRC      &kp RBRC  &kp K     &hmr LSHIFT LEFT &hmr LCTRL DOWN &hmr LALT UP &hmr LGUI RIGHT &kp SEMI    
-        &kp COMMA    &kp MINUS       &kp N1        &kp N2        &kp N3         &kp SLASH   &kp EQUAL     &kp MINUS &kp J     &kp HOME         &kp PG_DN       &kp PG_UP    &kp END         &kp INSERT
+        &kp ESC      &hml LGUI PLUS  &hml LALT N4  &hml LCTRL N5 &hml LSHIFT N6 &kp STAR    &kp LBRC      &kp RBRC  &kp Y     &hmr LSHIFT LEFT &hmr LCTRL DOWN &hmr LALT UP &hmr LGUI RIGHT &kp SEMI    
+        &kp COMMA    &kp MINUS       &kp N1        &kp N2        &kp N3         &kp SLASH   &kp EQUAL     &kp MINUS &kp LS(J) &kp HOME         &kp PG_DN       &kp PG_UP    &kp END         &kp INSERT
                                      &kp DOT       &kp N0                                                                                      &kp C_VOL_DN    &kp C_VOL_UP
                                                           &lt 1 DEL    &mt LSHIFT BSPC                     &kp SPACE &lt 2 ENTER
       >;
     };
 
     funsym_layer {
-      display-name = "FUNCTSYM";
+      display-name = "FUNSYM";
       bindings = <
-                       &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none      &none                                       &none     &none     &none     &none     &none     
-        &bt BT_CLR     &none        &none        &none        &none      &none       &sys_reset          &sys_reset  &none     &none     &none     &none     &none     &none 
-        &none          &kp EXCL     &kp AT       &kp HASH     &kp DOLLAR &kp PERCENT &none               &none       &kp CARET &kp AMPS  &kp STAR  &kp TILDE &kp GRAVE &none 
-        &bt BT_CLR_ALL &none        &none        &none        &none      &none       &bootloader         &bootloader &none     &none     &none     &none     &none     &none     
-                                    &none     &none                                                                                      &none     &none     
+                       &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none      &none                                       &none      &none      &none     &none     &none     
+        &bt BT_CLR     &none        &none        &none        &none      &none       &sys_reset          &sys_reset  &none      &none      &none     &none     &none     &none 
+        &none          &kp EXCL     &kp AT       &kp HASH     &kp DOLLAR &kp PERCENT &none               &none       &kp CARET  &kp AMPS   &kp STAR  &kp TILDE &kp GRAVE &none 
+        &bt BT_CLR_ALL &none        &none        &kp PSCRN    &kp K_APP  &none       &bootloader         &bootloader &none      &kp INSERT &none     &none     &none     &none     
+                                    &none        &none                                                                                      &none     &none     
                                                           &lt 1 DEL    &mt LSHIFT BSPC                     &kp SPACE &lt 2 ENTER
       >;
     };
 
     game_layer {
-      display-name = "PRO GAMER";
+      display-name = "GAMER";
       bindings = <
                &kp N1     &kp N2    &kp N3    &kp N4    &kp N5                       &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    
         &kp N6 &kp TAB    &kp Q     &kp W     &kp E     &kp R   &kp T       &kp ESC  &kp Y     &kp U     &kp I     &kp O     &kp APOS  &kp BSPC
         &kp N7 &kp LSHIFT &kp A     &kp S     &kp D     &kp F   &kp G       &none    &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp ENTER   
         &kp N8 &kp LALT   &kp Z     &kp X     &kp C     &kp V   &kp B       &none    &kp N     &kp M     &kp COMMA &kp DOT   &kp SLASH &kp RSHIFT     
                                     &kp N9    &kp N0                                                     &none     &tog GAME     
-                                                             &kp LCTRL &kp SPACE          &tog GAME &kp ENTER
+                                                    &kp LCTRL &kp SPACE          &tog GAME &kp ENTER
       >;
     };
 
