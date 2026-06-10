@@ -20,8 +20,8 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: bearclaw_dongle prospector_adapter
+    shield: cygnus_dongle prospector_adapter
   - board: seeeduino_xiao_ble
-    shield: bearclaw_left
+    shield: cygnus_left
   - board: seeeduino_xiao_ble
-    shield: bearclaw_right
+    shield: cygnus_right
