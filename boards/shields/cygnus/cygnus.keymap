@@ -193,7 +193,7 @@
     sym_layer {
       display-name = "SYM";
       bindings = <
-        &kp EXCL  &kp AT    &kp HASH &kp DLLR &kp PERCENT             &kp CARET  &kp AMP     &kp STAR   &kp UNDER  &kp SEMI
+        &kp EXCL  &kp AT    &kp HASH &kp DLLR &kp PERCENT             &kp CARET  &kp AMPS    &kp STAR   &kp UNDER  &kp SEMI
         &kp GRAVE &kp TILDE &kp LBRC &kp LPAR &kp LBKT                &kp COLON  &sk LSHIFT  &sk LCTRL  &sk LALT   &sk LGUI 
         &kp LT    &kp GT    &kp RBRC &kp RPAR &kp RBKT                &kp PIPE   &kp MINUS   &kp EQUAL  &kp PLUS   &kp BACKSLASH   
                             &lt 2 DEL  &lt 1 ESC  &mt LSHIFT BSPC     &kp SPACE  &lt 1 ENTER   &lt 2 TAB
