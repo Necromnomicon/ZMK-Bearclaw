@@ -2,15 +2,15 @@
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: carrefinho                            # <--- add this
-      url-base: https://github.com/carrefinho     # <--- and this
+    - name: necromnomicon
+      url-base: https://github.com/necromnomicon     # <--- and this
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: v0.3                              # <--- v0.3 only
       import: app/west.yml
-    - name: prospector-zmk-module                 # <--- and these
-      remote: carrefinho                          # <---
+    - name: zmk-dongle-screen                     # <--- and these
+      remote: necromnomicon # <---
       revision: main                              # <---
   self:
     path: config   
