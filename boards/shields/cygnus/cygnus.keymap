@@ -110,7 +110,7 @@
 
     navi_layer {
       display-name = "NAVI";
-      bindings = <kp
+      bindings = <
         &none     &none        &none      &none       &none             &kp PSCRN  &kp B     &kp LC(D) &kp LC(U)  &kp W
         &sk LGUI  &sk LALT     &sk LCTRL  &sk LSHIFT  &none             &kp CAPS   &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT 
         &to BASE  &kp LC(TAB)  &kp TAB    &kp ESC     &none             &kp INSERT &kp HOME  &kp PG_DN &kp PG_UP  &kp END   
