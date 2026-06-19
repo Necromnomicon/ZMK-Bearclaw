@@ -124,7 +124,7 @@
       bindings = <
         &kp PLUS  &kp 7  &kp 8  &kp 9  &kp STAR             &none     &none      &none     &none    &none  
         &kp MINUS &kp 4  &kp 5  &kp 6  &kp SLASH            &kp CAPS  &sk RSHIFT &sk RCTRL &sk RALT &sk RGUI  
-        &kp DOT   &kp 1  &kp 2  &kp 3  &kp COMMA            &kp EQUAL &kp ENT    &kp BSPC  &none    &to BASE
+        &kp DOT   &kp 1  &kp 2  &kp 3  &kp COMMA            &kp EQUAL &kp ENTER    &kp BSPC  &none    &to BASE
                           &sl SYMB  &sl NAVI  &kp 0    &to BASE  &to NAVI  &sl SYMB
       >;
     };
