@@ -9,7 +9,7 @@
 #define NUMB 2
 #define SYMB 3
 #define FUNC 4
-
+#define MO_TOG(layer) &mo_tog layer layer   // Macro to apply momentary-layer-on-hold/toggle-layer-on-tap to a specific layer
 
   // key posiitons 
   //  |    0   1   2   3   4     |   |    5   6  7   8   9  |
@@ -43,9 +43,9 @@
       hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32>;
       hold-trigger-on-release;
     };
-
   };
   */ 
+
   combos {
     compatible = "zmk,combos";
       //HORIZANTAL COMBOS
@@ -88,13 +88,13 @@
 
     combo_delete {
       timeout-ms = <50>;
-      key-positions = <6 7>;
+      key-positions = <7 8>;
       bindings = <&kp DEL>;
     };
 
     combo_backspace {
       timeout-ms = <50>;
-      key-positions = <7 8>;
+      key-positions = <27 28>;
       bindings = <&kp BSPC>;
     };
 
@@ -106,7 +106,7 @@
 
     combo_semi {
       timeout-ms = <50>;
-      key-positions = <27 28>;
+      key-positions = <26 27 28>;
       bindings = <&kp SEMI>;
     };
 
@@ -140,9 +140,9 @@
     numb_layer {
       display-name = "NUMB";
       bindings = <
-        &kp PLUS  &kp 7  &kp 8  &kp 9  &kp STAR             &none     &none      &none     &none    &none  
+        &kp PLUS  &kp 7  &kp 8  &kp 9  &kp STAR             &none     &none      &none     &kp DEL    &kp SEMI  
         &kp MINUS &kp 4  &kp 5  &kp 6  &kp SLASH            &none     &sk RSHIFT &sk RCTRL &sk RALT &sk RGUI  
-        &kp DOT   &kp 1  &kp 2  &kp 3  &kp COMMA            &kp EQUAL &kp ENTER  &kp DEL   &kp BSPC  &to BASE
+        &kp DOT   &kp 1  &kp 2  &kp 3  &kp COMMA            &kp EQUAL &kp ENTER  &kp BSPC  &kp LC(BSPC)  &to BASE
                           &sl SYMB  &sl NAVI  &kp 0    &to BASE  &to NAVI  &sl SYMB
       >;
     };
