@@ -201,7 +201,7 @@
       bindings = <
         &kp 6        &kp 7  &kp 8  &kp  9 &kp 0                &kp APOS  &kp F  &kp O      &kp U    &kp J
         &mt LSHIFT 4 &kp 3  &kp 2  &kp 1  &kp 5                &kp Y     &kp H  &kp A      &kp E    &kp I 
-        &mt F4       &kp F3 &kp F2 &kp F3 &kp F5                &kp K     &kp P  &kp COMMA  &kp DOT  &kp SLASH   
+        &mt LCTRL F4 &kp F3 &kp F2 &kp F3 &kp F5                &kp K     &kp P  &kp COMMA  &kp DOT  &kp SLASH   
                         &kp G  &kp G &kp SPACE              &kp SPACE  &sl NUMB  &sl SYMB
       >;
     };
