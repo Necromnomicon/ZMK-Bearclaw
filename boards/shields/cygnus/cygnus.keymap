@@ -130,7 +130,7 @@
     combo_capsword {
       timeout-ms = <100>;
       key-positions = <23 26>;
-      bindings = <&capsword>;
+      bindings = <&caps_word>;
     };
 
 
