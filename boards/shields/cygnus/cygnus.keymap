@@ -185,8 +185,8 @@
       display-name = "FUNCTION";
       bindings = <
         &kp F10 &kp F7 &kp F8 &kp F9 &kp F22                &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR_ALL &bt BT_CLR
-        &kp F11 &kp F4 &kp F5 &kp F6 &kp F23                &kp C_MUTE &sk LSHIFT &sk LCTRL    &sk LALT &sk LGUI 
-        &kp F12 &kp F1 &kp F2 &kp F3 &kp F24                &kp C_PP   &kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT   
+        &kp F11 &kp F4 &kp F5 &kp F6 &kp F24                &kp C_MUTE &sk LSHIFT &sk LCTRL    &sk LALT &sk LGUI 
+        &kp F12 &kp F1 &kp F2 &kp F3 &kp F23                &kp C_PP   &kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT   
                           &sl SYMB  &sl NAVI  &sk LSHIFT    &kp SPACE  &sl NUMB  &sl SYMB
       >;
     };
@@ -197,16 +197,16 @@
         &kp T      &kp Q  &kp W  &kp E  &kp R                &kp Y     &kp U  &kp I      &kp O    &kp P
         &kp LSHIFT &kp A  &kp S  &kp D  &kp F                &kp H     &kp J  &kp K      &kp L    &kp ENTER 
         &kp LCTRL  &kp Z  &kp X  &kp C  &kp V                &kp N     &kp M  &kp COMMA  &kp DOT  &kp SLASH   
-                        &kp B  &lt G GAME2 &kp SPACE         &kp SPACE  &none  &sl SYMB
+                        &kp B  &lt GAME2 G &kp SPACE         &kp SPACE  &none  &sl SYMB
       >;
     };
 
     game2_layer {
       display-name = "GAME_2";
       bindings = <
-        &kp 6        &kp 7  &kp 8  &kp  9 &kp 0               &kp Y     &kp U  &kp I      &kp O    &kp P 
-        &mt LSHIFT 4 &kp 3  &kp 2  &kp 1  &kp 5               &kp H     &kp J  &kp K      &kp L    &kp ENTER
-        &mt LCTRL F4 &kp F3 &kp F2 &kp F3 &kp F5              &kp N     &kp M  &kp COMMA  &kp DOT  &kp SLASH  
+        &kp N6        &kp N7  &kp N8  &kp  N9 &kp N0               &kp Y     &kp U  &kp I      &kp O    &kp P
+        &mt LSHIFT N4 &kp N3  &kp N2  &kp N1  &kp N5               &kp H     &kp J  &kp K      &kp L    &kp ENTER
+       &mt LCTRL F4 &kp F3 &kp F2 &kp F3 &kp F5                    &kp N     &kp M  &kp COMMA  &kp DOT  &kp SLASH  
                         &kp B &trans  &kp SPACE              &kp SPACE  &sl NUMB  &sl SYMB
       >;
     };
