@@ -73,18 +73,6 @@
       bindings = <&bootloader>;
     };
 
-    combo_forward_tab {
-      timeout-ms = <50>;
-      key-positions = <2 3>;
-      bindings = <&kp RC(TAB)>;
-    };
-
-    combo_backward_tab {
-      timeout-ms = <50>;
-      key-positions = <1 2>;
-      bindings = <&kp RS(RC(TAB))>;
-    };
-
     combo_tab {
       timeout-ms = <50>;
       key-positions = <21 22>;
@@ -148,7 +136,7 @@
       bindings = <
         &kp N1     &kp N2        &kp N3      &kp N4       &kp N5            &kp N6 &kp N7     &kp N8 &kp N9  &kp N0
         &sk LGUI  &sk LALT     &sk LCTRL  &sk LSHIFT  &kp PSCRN        &kp ENTER &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT 
-        &kp CAPS  &kp LC(TAB)  &kp TAB    &kp ESC     &kp INSERT       &none &kp HOME  &kp PG_DN &kp PG_UP  &kp END   
+        &none  &kp LC(TAB)  &kp TAB    &kp ESC     &kp INSERT       &none &kp HOME  &kp PG_DN &kp PG_UP  &kp END   
                                 &sl SYMB  &to NUMB  &sk LSHIFT    &to BASE  &sl NUMB  &sl SYMB
       >;
     };
