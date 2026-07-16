@@ -149,10 +149,10 @@
     navi_layer {
       display-name = "NAVIGATE";
       bindings = <
-        &kp N1    &kp N2    &kp N3     &kp N4      &kp N5           &kp N6    &kp N7    &kp N8    &kp N9     &kp N0
-        &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHIFT  &kp PSCRN        &kp ENTER &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT 
-        &kp LS(LC(TAB)) &kp LC(TAB) &kp TAB &kp ESC &kp INSERT      &none     &kp HOME  &kp PG_DN &kp PG_UP  &kp END   
-                                &sl SYMB  &to NUMB  &kp LSHIFT    &to BASE  &sl NUMB  &sl SYMB
+        &kp N1    &kp N2    &kp N3     &kp N4       &kp N5           &kp N6    &kp N7    &kp N8    &kp N9     &kp N0
+        &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHIFT   &none            &kp B     &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT 
+        &kp LS(LC(TAB)) &kp LC(TAB) &kp TAB &kp ESC &none            &kp W     &kp HOME  &kp PG_DN &kp PG_UP  &kp END   
+                                &to NUMB  &trans   &kp LSHIFT    &to BASE  &sl NUMB  &sl SYMB
       >;
     };
 
@@ -160,10 +160,10 @@
     numb_layer {
       display-name = "NUMBER";
       bindings = <
-        &kp PLUS  &kp N7  &kp N8  &kp N9  &kp STAR             &none     &none      &none     &none     &kp SEMI  
+        &kp PLUS  &kp N7  &kp N8  &kp N9  &kp STAR             &kp INSERT &kp PSCRN      &none     &none     &kp SEMI  
         &kp MINUS &kp N4  &kp N5  &kp N6  &kp SLASH            &none     &sk RSHIFT &sk RCTRL &sk RALT  &sk RGUI  
         &kp DOT   &kp N1  &kp N2  &kp N3  &kp COMMA            &kp EQUAL &kp ENTER  &kp BSPC  &kp LC(BSPC)  &kp DEL
-                          &sl SYMB  &sl NAVI  &kp N0    &to BASE  &to NAVI  &sl SYMB
+                          &sl SYMB  &sl NAVI  &kp N0        &to BASE  &trans  &to NAVI
       >;
     };
 
