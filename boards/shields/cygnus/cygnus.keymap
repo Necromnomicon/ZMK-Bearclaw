@@ -160,7 +160,7 @@
         &kp T      &kp Q  &kp W  &kp E  &kp R                &kp Y     &kp U  &kp I      &kp O    &kp P
         &kp LCTRL  &kp A  &kp S  &kp D  &kp F                &kp H     &kp J  &kp K      &kp L    &kp ENTER 
         &kp LSHIFT &kp Z  &kp X  &kp C  &kp V                &kp N     &kp M  &kp COMMA  &kp DOT  &kp SLASH   
-                        &kp B  &sl GAME2  &kp SPACE         &kp SPACE  &none  &sl SYMB
+                        &kp B  &sl GAME2  &kp SPACE         &to BASE  &kp ESC  &sl SYMB
       >;
     };
 
