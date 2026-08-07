@@ -10,7 +10,9 @@
 #define SYMB 3
 #define FUNC 4
 #define GAME 5 
-#define GAME2 6 
+#define GAME2 6
+#define WARFRAME 7
+#define WARFRAME2 8 
 
   // key posiitons 
   //  |    0   1   2   3   4     |   |    5   6  7   8   9  |
@@ -169,7 +171,27 @@
       bindings = <
         &kp N1        &kp N2  &kp N3  &kp N4 &kp N5               &kp Y     &kp U  &kp I      &kp O    &kp P
         &mt LCTRL N6  &kp N7  &kp N8  &kp N9 &kp N0               &kp H     &kp J  &kp K      &kp L    &kp ENTER
-        &mt LSHIFT F1 &kp F2  &kp F3  &kp F4 &kp F5                    &kp N     &kp M  &kp COMMA  &kp DOT  &kp SLASH  
+        &mt LSHIFT F1 &kp F2  &kp F3  &kp F4 &kp F5                    &kp N     &kp M  &kp COMMA  &kp DOT  &to WARFRAME
+                        &kp M &kp G   &kp SPACE              &kp SPACE  &sl NUMB  &sl SYMB
+      >;
+    };
+
+    wf_layer {
+      display-name = "WARFRAME";
+      bindings = <
+        &kp N1     &kp N2  &kp W  &kp N3  &kp N4                &kp Y     &kp U  &kp I      &kp O    &kp P
+        &kp LCTRL  &kp A  &kp S  &kp D  &kp F                &kp H     &kp J  &kp K      &kp L    &kp ENTER 
+        &kp LSHIFT &kp Z  &kp X  &kp E  &kp R                 &kp N     &kp M  &kp COMMA  &kp DOT  &kp SLASH   
+                        &kp B  &sl WARFRAME2 &kp SPACE         &to BASE  &kp ESC  &sl SYMB
+      >;
+    };
+
+    wf2_layer {
+      display-name = "WARFRAME2";
+      bindings = <
+        &kp T         &kp Q   &kp W  &kp C &kp V               &kp Y     &kp U  &kp I      &kp O    &kp P
+        &kp LCTRL  &kp A   &kp S  &kp D &kp N5               &kp H     &kp J  &kp K      &kp L    &kp ENTER
+        &mt LSHIFT N6 &kp N7  &kp N8 &kp N9 &kp N0                    &kp N     &kp M  &kp COMMA  &kp DOT  &kp SLASH  
                         &kp M &kp G   &kp SPACE              &kp SPACE  &sl NUMB  &sl SYMB
       >;
     };
